@@ -16,15 +16,15 @@ public class Account {
 
 	public void depositMoney(double depositedMoney) {
 		this.balance += depositedMoney;
-		System.out.println("Deposit is succesful new balance is" + this.balance);
+		System.out.println("Deposit is succesful new balance is " + this.balance);
 	}
 
 	public void withdrawMoney(double withdrawMoney) {
 		if (this.balance - withdrawMoney < 0) {
-			System.out.println("you don't have sufficient balance" + this.balance);
+			System.out.println("you don't have sufficient balance " + this.balance);
 		} else
 			this.balance -= withdrawMoney;
-		System.out.println("Withdrawal is successful remaining balance is" + this.balance);
+		System.out.println("Withdrawal is successful remaining balance is " + this.balance);
 	}
 
 	public String getNumber() {

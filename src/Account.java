@@ -6,6 +6,14 @@ public class Account {
 	private String email;
 	private String phoneNo;
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account sbi = new Account("12345", 8000, "Manju", "man@gmail.com", "8050");
+		sbi.depositMoney(500);
+		sbi.withdrawMoney(100);
+		sbi.depositMoney(300);
+	}
+
 	public Account(String number, double balance, String name, String email, String phoneNo) {
 		this.number = number;
 		this.balance = balance;

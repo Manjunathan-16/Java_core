@@ -15,7 +15,7 @@ public class MainLinkedList {
 //		list.removeLast();
 //		System.out.println("---------------------------------------");
 //		System.out.println(list.indexOf(300));
-//		System.out.println(list.contains(5));
+		System.out.println(list.contains(500));
 		list.print();
 
 	}

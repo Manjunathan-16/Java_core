@@ -59,6 +59,8 @@ public class Linkedlist {
 //				current = current.next;
 //		}
 //		return false;
+		
+		// The above changes can be done in a single line just by taking indexof method
 		return indexOf(item) != -1;
 
 	}

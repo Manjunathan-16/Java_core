@@ -15,6 +15,7 @@ public class Linkedlist {
 	private Node first;
 	private Node last;
 
+	// Method to add number at the last
 	public void addLast(int item) {
 		Node node = new Node(item);
 		if (isEmpty()) {
@@ -25,6 +26,7 @@ public class Linkedlist {
 		}
 	}
 
+	// Method to add number at the first
 	public void addFirst(int item) {
 		Node node = new Node(item);
 		if (isEmpty()) {
@@ -35,6 +37,7 @@ public class Linkedlist {
 		}
 	}
 
+	// Method to get the index of a number
 	public int indexOf(int item) {
 		int index = 0;
 		Node current = first;
@@ -47,6 +50,7 @@ public class Linkedlist {
 		return -1;
 	}
 
+	// Method to check weather the given number is present or not
 	public boolean contains(int item) {
 //		Node current = first;
 //		while (current != null) {
@@ -59,6 +63,7 @@ public class Linkedlist {
 
 	}
 
+	// Method to remove first number
 	public void removeFirst() {
 		if (isEmpty())
 			throw new NoSuchElementException();
@@ -71,6 +76,7 @@ public class Linkedlist {
 		first = second;
 	}
 
+	// Method to remove last number
 	public void removeLast() {
 		if (isEmpty())
 			throw new NoSuchElementException();
@@ -85,6 +91,7 @@ public class Linkedlist {
 
 	}
 
+	// Method used to get previous node details for removeLast()
 	private Node getPrevious(Node node) {
 		Node current = first;
 		while (current != null) {
@@ -95,10 +102,12 @@ public class Linkedlist {
 		return null;
 	}
 
+	// Method to check whether first is null or not 
 	private boolean isEmpty() {
 		return first == null;
 	}
 
+	// Method used for printing linkedlist
 	public void print() {
 		Node current = first;
 		while (current != null) {

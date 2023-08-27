@@ -20,7 +20,7 @@ public class StreamAPI {
 		Stream<Integer> o = m.map(a -> a * 2);
 		o.forEach(n -> System.out.println(n));
 
-		// reducing into single value and displaying
+ 		// reducing into single value and displaying
 //		int r = o.reduce( 0,(c,e)->c+e); // adding all values
 //		System.out.println(r);
 	}

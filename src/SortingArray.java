@@ -12,9 +12,14 @@ public class SortingArray {
 					arr[j] = temp;
 				}
 			}
-			System.out.print(" ");
-			System.out.print(arr[i]);
+//			System.out.print(" ");
+//			System.out.print(arr[i]);
 
 		}
+		String s = "Manju" ; 
+		
+		s = "nath";
+		
+		System.out.println(s);
 	}
 }

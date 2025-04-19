@@ -1,11 +1,12 @@
+package Threads;
 
-public class MultiThreadThing extends Thread {
-
-//public class MultiThreadThing implements Runnable{
+public class MultiThreadThing implements Runnable {
 	private int threadNumber;
+
 	public MultiThreadThing(int threadNumber) {
-		this.threadNumber=threadNumber;
+		this.threadNumber = threadNumber;
 	}
+
 	@Override
 	public void run() {
 		for (int i = 1; i <= 5; i++) {

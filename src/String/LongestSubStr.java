@@ -1,4 +1,4 @@
-package DailyCoding;
+package String;
 
 import java.util.HashMap;
 
